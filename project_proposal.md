@@ -7,7 +7,7 @@ After controlling for the volume of traffic going through each transit station, 
 
 * *Who benefits from exploring this question or building this model/system?*
 
-My client is a software start-up aiming to help their users safely navigate mass transit systems in major cities. As a first step, they're developing a navigation app for New Yorkers that will incorporate crime data for each station when suggesting possible routes to the user's destination. For example, the app would avoid routing users through the most dangerous stations if there is a reasonable alternative route.
+My client is a software start-up aiming to help their users safely navigate mass transit systems in major cities. As a first step, they're developing a navigation app for New Yorkers that will incorporate crime data for each station when suggesting possible routes to the user's destination. For example, the app would avoid routing users through the most dangerous stations if there's a reasonable alternative route.
 
 ### Data description:
 * *What dataset(s) do you plan to use, and how will you obtain the data?*
