@@ -12,11 +12,17 @@ My client is a software start-up aiming to help their users safely navigate mass
 ### Data description:
 * *What dataset(s) do you plan to use, and how will you obtain the data?*
 
-I plan to use both MTA transit data and NYC's official complaint records ("complaints" being the term for any record logged with NYPD for offenses such as harassment, assault, rape, theft, etc.). Both datasets are publicly available online. I'd like to look at data from at least one full year to ensure I haven't selected unrepresentative periods of time (such as months with major holidays, summer tourism, etc.). It'd also be interesting to look at pre- and post- pandemic data and examine any differences.
+I plan to use both MTA transit data and NYC's official complaint records ("complaints" being the term for any record logged with NYPD for offenses such as harassment, assault, rape, theft, etc.). Both datasets are publicly available online. I'd like to look at data from at least one full year to ensure I haven't selected unrepresentative periods of time (such as months with major holidays, summer tourism, etc.). I'll collect the data using SQL, converting into Python via SQLAlchemy.
+
+http://web.mta.info/developers/turnstile.html
+
+https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i
+Rows - 7.38M
+Columns - 35
 
 * *What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?*
 
-The unit of analysis is each complaint logged at each station. Features will include station, entries, exits, and possibly boroughs or other indication of broader location.
+The unit of analysis for the complaints dataset is each complaint logged at each station. For the transit data, the unit of analysis is the logged entries and exits for each time increment for each station. Features will include station, traffic volume (as indicated by entries and exits) and possibly boroughs or other indication of broader location.
 
 ### Tools:
 * *How do you intend to meet the tools requirement of the project?*
@@ -25,7 +31,7 @@ I'll use SQL for ingestion, storage, and extraction of the data into Python via 
 
 * *Are you planning in advance to need or use additional tools beyond those required?*
 
-No specific plans to do so.
+No specific plans to do so, but open to using whatever translates my findings best.
 
 ### MVP goal:
 * *What would a minimum viable product (MVP) look like for this project?*
